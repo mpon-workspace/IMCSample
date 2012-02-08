@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "SocketIO.h"
 
-@interface ViewController : UIViewController<SocketIODelegate>
+@interface ViewController : UIViewController<SocketIODelegate,UIScrollViewDelegate>
+
 @property (strong, nonatomic) SocketIO *socketIO;
+@property (strong, nonatomic) IBOutlet UIScrollView *pagingScrollView;
+@property (assign, nonatomic) BOOL mode;
+
+- (IBAction)connect;
+- (IBAction)disconnect;
+- (IBAction)changeMode:(id)sender;
 @end

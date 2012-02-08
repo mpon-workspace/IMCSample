@@ -26,7 +26,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     ViewController *vc = [[[ViewController alloc] init] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:vc] autorelease];
-    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
+    self.navigationController.navigationBarHidden = YES;
     // Override point for customization after application launch.
     [self.window addSubview:self.navigationController.view];
     [self.window makeKeyAndVisible];
