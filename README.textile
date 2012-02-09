@@ -1,0 +1,2 @@
+* iPhone Client for "imcserver":https://github.com/mpon/imcserver
+* reference to "pykeck/socket.IO-objc":https://github.com/pkyeck/socket.IO-objc
